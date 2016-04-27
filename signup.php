@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>注册</title>
 </head>
 
 <body>
@@ -26,6 +26,6 @@
     </table>
 
 </form>
-<a href="hello.php">去登录吧，超人</a>
+
 </body>
 </html>

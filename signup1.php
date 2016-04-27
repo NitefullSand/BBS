@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>注册</title>
 </head>
 
 <body>
@@ -13,6 +13,7 @@ $sql = "INSERT INTO user(username,password)
 VALUES ('".$_POST['username']."','".$_POST['password']."')";
 if (mysqli_query($db, $sql)) {
     echo "New record created successfully";
+	echo '<a href="login.php">去登录吧，超人</a>';
 } 
 else {
     echo "Error: 用户已存在";

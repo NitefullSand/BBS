@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>My name</title>
+<title>登录</title>
 </head>
 
 <body>
-<form action="hello1.php" method="post">
+<form action="login1.php" method="post">
 	<table>
         <tr>
             <td>Name</td>
