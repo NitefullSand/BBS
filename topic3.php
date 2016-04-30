@@ -2,12 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <title>查看话题</title>
+    <link rel="stylesheet" type="text/css" href="topic4.css"/>
 </head>
 <body>
 <?php
 session_start();
 echo "欢迎" . $_SESSION['username']."<br>";
 ?>
+<div class="new">
+最新动态:
+</div>
 <?php
 $db=mysqli_connect('localhost','root','wzj196310') or die ('Unable to connect.Check your connection parameters.');
 mysqli_select_db($db,'bbs');

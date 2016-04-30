@@ -6,6 +6,7 @@ session_start();
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>登录</title>
+<link rel="stylesheet" type="text/css" href="topic4.css"/>
 </head>
 
 <body>
@@ -19,7 +20,7 @@ if($row['password']==$_POST['password'])
 {
 	$_SESSION['username']=$_POST['username'] ;
 echo '<h1>Hello ' . $_POST['username'] . '!</h1>';
-echo '<a href="topic.php">开启网站之旅吧，欧耶！</a>';
+echo '<a href="DreamWorld.php">开启网站之旅吧，欧耶！</a>';
 echo "<br>";
 }
 else

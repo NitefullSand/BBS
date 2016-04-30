@@ -1,0 +1,65 @@
+.center{
+	color: blue;
+}
+.new{
+	color:#8fbc8f;
+}
+.Sform{
+	position: absolute;
+	left: 30%;
+	top: 20%;
+}
+.Lform{
+	position: absolute;
+	left: 30%;
+	top: 20%;
+}
+.welcome{
+	color: red;
+}
+.Tform{
+	position: absolute;
+	left: 30%;
+	top: 20%;
+}
+*{
+	background-color: 
+}
+.header{
+	color:green;
+
+
+}
+.menu{
+	position: absolute;
+	left: 7%;
+	top: 20%;
+
+
+}
+.content1{
+	position: absolute;
+	left:30%;
+	top: 30%;
+
+}
+.footer{
+
+}
+/*.mymenu1{
+	position: absolute;
+	left: 4%;
+	top: 40%;
+
+}
+.mymenu2{
+	position: absolute;
+	left:7%;
+	top:55%;
+
+}*/
+body{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+}

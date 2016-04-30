@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>话题</title>
+	<link rel="stylesheet" type="text/css" href="topic4.css"/>
 <?php
 session_start();
 echo "欢迎" . $_SESSION['username'];
@@ -16,7 +17,8 @@ $sql = "INSERT INTO topic(author,heading,content,time)
 VALUES ('". $_SESSION['username']."','".$_POST['heading']."','".$_POST['content']."','".date("y-m-d h:i:s",time())."')";
 if (mysqli_query($db, $sql)) {
     echo "发表成功";
-	echo '<a href="topic3.php">返回查看</a>';
+	echo "<a href='topic3.php'>返回查看</a><br/>";
+	echo "<a href='DreamWorld.php'>返回首页</a>";
 } 
 
 ?>	

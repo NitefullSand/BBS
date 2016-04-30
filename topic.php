@@ -4,13 +4,17 @@ session_start();
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<link rel="stylesheet" type="text/css" href="topic4.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 </head>
 <body>
+<div class="welcome">
 <?php
 echo "欢迎" . $_SESSION['username'];
 ?>
+</div>
+<div class="Tform">
 <form action="topic1.php" method="post">
 		<table>
 			<tr>
@@ -21,7 +25,7 @@ echo "欢迎" . $_SESSION['username'];
 				<td><input type="text" name="heading"/></td>
 			</tr>
 			<tr>
-				<td>内容</td>
+				<td>内容:</td>
 				<td><input type="text" name="content"/></td>
 			</tr>
 			<tr>
@@ -34,6 +38,7 @@ echo "欢迎" . $_SESSION['username'];
 	            </td>
             </tr>
 		</table>
-	</form>
+</form>
+</div>
 </body>
 </html>
