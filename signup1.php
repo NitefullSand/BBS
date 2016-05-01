@@ -16,9 +16,22 @@ if (mysqli_query($db, $sql)) {
     echo "New record created successfully";
 	echo '<a href="login.php">去登录吧，超人</a>';
 } 
-else {
-    echo "Error: 用户已存在";
+elseif(empty($_POST["username"])&&empty($_POST["password"])){
+		echo "Error:请输入用户名和密码";
 }
+elseif(empty($_POST["username"])){
+		echo "Error:请输入用户名";
+}
+elseif(empty($_POST["password"])) {
+		echo "Error:请设置密码";
+}
+else {
+    echo 'Error:用户已存在请直接<a href="login.php">登录</a>';
+}
+//define variables and set to empty values
+//$nameErr=$passwordErr="";
+//$name=$password="";
+
 
 ?>
 </body>

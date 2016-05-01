@@ -7,17 +7,18 @@
 </head>
 
 <body>
+<img src="bg2.jpg" width="100%" height="100%"/>
 <div class="Lform">
 <form action="login1.php" method="post">
 	<table>
         <tr>
-            <td class="Lname">Name</td>
+            <td class="Lname"><img src="people.png">Name</td>
             <td><input type="text" name="username" />
             </td>
        </tr>
         <tr>
-            <td class="Lpassword">Password</td>
-            <td><input type="text" name="password" />
+            <td class="Lpassword"><img src="lock.png">Password</td>
+            <td><input type="password" name="password" />
             </td>
         </tr>
         <tr>

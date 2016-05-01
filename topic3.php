@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="topic4.css"/>
 </head>
 <body>
+
 <?php
 session_start();
 echo "欢迎" . $_SESSION['username']."<br>";

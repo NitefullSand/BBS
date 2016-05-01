@@ -6,21 +6,21 @@
 }
 .Sform{
 	position: absolute;
-	left: 30%;
-	top: 20%;
+	left: 40%;
+	top: 48%;
 }
 .Lform{
 	position: absolute;
-	left: 30%;
-	top: 20%;
+	left: 40%;
+	top: 48%;
 }
 .welcome{
 	color: red;
 }
 .Tform{
 	position: absolute;
-	left: 30%;
-	top: 20%;
+	left: 40%;
+	top: 48%;
 }
 *{
 	background-color: 
@@ -34,8 +34,6 @@
 	position: absolute;
 	left: 7%;
 	top: 20%;
-
-
 }
 .content1{
 	position: absolute;
@@ -43,23 +41,14 @@
 	top: 30%;
 
 }
-.footer{
-
-}
-/*.mymenu1{
-	position: absolute;
-	left: 4%;
-	top: 40%;
-
-}
-.mymenu2{
-	position: absolute;
-	left:7%;
-	top:55%;
-
-}*/
 body{
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	
 }
+.Aform{
+	position: absolute;
+	left: 40%;
+	top: 48%;
+
+	

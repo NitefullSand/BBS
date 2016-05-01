@@ -16,13 +16,25 @@ mysqli_select_db($db,'bbs');
 $sql="select password FROM user WHERE username='". $_POST['username']."'";
 $result=mysqli_query($db,$sql);
 $row = $result->fetch_assoc();
-if($row['password']==$_POST['password'])
+if(empty($_POST["username"])&&empty($_POST["password"])){
+		echo "Error:请输入用户名和密码";
+}
+elseif(empty($_POST["username"])){
+		echo "Error:请输入用户名";
+		
+}
+elseif(empty($_POST["password"])) {
+		echo "Error:请输入密码";
+}
+
+elseif($row['password']==$_POST['password'])
 {
 	$_SESSION['username']=$_POST['username'] ;
 echo '<h1>Hello ' . $_POST['username'] . '!</h1>';
 echo '<a href="DreamWorld.php">开启网站之旅吧，欧耶！</a>';
 echo "<br>";
 }
+
 else
 {
 	echo "密码或用户名错误";

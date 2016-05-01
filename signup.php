@@ -5,19 +5,19 @@
 <title>注册</title>
 <link rel="stylesheet" type="text/css" href="topic4.css"/>
 </head>
-
 <body>
+<img src="bg2.jpg" width="100%" height="100%"/>
 <div class="Sform">
 <form action="signup1.php" method="post">
 	<table>
         <tr class="Sname">
-            <td>Name</td>
+            <td><img src="people.png">Name</td>
             <td><input type="text" name="username" />
             </td>
        </tr>
         <tr class="Spassword">
-            <td>Password</td>
-            <td><input type="text" name="password" />
+            <td><img src="lock.png">Password</td>
+            <td><input type="password" name="password" />
             </td>
         </tr>
         <tr>

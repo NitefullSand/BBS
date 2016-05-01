@@ -27,11 +27,29 @@ echo <<<ENDHTML
 	<div class="time">
 	$time
 	</div>
+ENDHTML;
+	echo '<a href="answer.php?id='.$_GET['id'].'">回复</a></div>';
+}
+$sql="select * FROM answer where topic_id='".$_GET['id']."'";
+$result=mysqli_query($db,$sql);
+while($row = $result->fetch_assoc()){
+$author=$row['author'];
+$content=$row['answer_content'];
+$time=$row['time'];
+echo <<<ENDHTML
+<div class="center">
+	<div class="author">
+	$author
+	</div>
+	<div class="content">
+	$content
+	</div>
+	<div class="time">
+	$time
+	</div>
 </div>
 ENDHTML;
-	// echo $row['author']."<br>";
-	// echo $row['content']."<br>";
-	// echo $row['time']."<br>";
+	// echo '<a href="answer.php?id='.$row['answer_id'].'">回复';
 }
 echo "<a href='topic3.php'>返回继续查看</a><br>";
 echo "<a href='DreamWorld.php'>返回首页</a>";

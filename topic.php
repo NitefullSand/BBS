@@ -6,9 +6,10 @@ session_start();
 <head>
 <link rel="stylesheet" type="text/css" href="topic4.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>话题首页</title>
 </head>
 <body>
+<img src="bg2.jpg" width="100%" height="100%"/>
 <div class="welcome">
 <?php
 echo "欢迎" . $_SESSION['username'];
@@ -26,10 +27,10 @@ echo "欢迎" . $_SESSION['username'];
 			</tr>
 			<tr>
 				<td>内容:</td>
-				<td><input type="text" name="content"/></td>
+				<td><textarea name="content" rows="5" cols="40"></textarea></td>
 			</tr>
 			<tr>
-				<td>时间</td>
+				<td>时间:</td>
 				<td><?php date_default_timezone_set('prc');  $time = time();echo date("y-m-d h:i:s",$time) ?></td>
 			</tr>
 			<tr>
