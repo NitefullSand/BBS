@@ -8,7 +8,15 @@
 
 <?php
 session_start();
-echo "欢迎" . $_SESSION['username']."<br>";
+if (isset($_SESSION['username']))
+{
+	echo "欢迎" . $_SESSION['username']."<br>";
+}
+else{
+	echo "<script>alert('请登录');top.location='login.php';</script>";
+	exit();
+}
+
 ?>
 <div class="new">
 最新动态:

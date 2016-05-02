@@ -12,7 +12,15 @@ session_start();
 <img src="bg2.jpg" width="100%" height="100%"/>
 <div class="welcome">
 <?php
-echo "欢迎" . $_SESSION['username'];
+if(isset($_SESSION['username']))
+{
+	echo "欢迎" . $_SESSION['username'];
+} else {
+	echo "<script>alert('请登录');  top.location='login.php'; </script>";
+	//header("Location:login.php");
+	exit;
+}
+
 ?>
 </div>
 <div class="Tform">

@@ -25,10 +25,12 @@
 		<a href="topic3.php">查看留言</a>
 	</div>
 </div>
-
+<div class="exit">
+	<a href="login.php">退出当前用户</a>
+</div>
 
 <div class="content1">
-Welcome to my 空间！
+Welcome to NitefullSand！
 </div>
 <div class="footer">
 </div>

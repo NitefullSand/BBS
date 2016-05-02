@@ -50,5 +50,14 @@ body{
 	position: absolute;
 	left: 40%;
 	top: 48%;
+}
+.exit{
+	position: absolute;
+	left: 7%;
+	top: 40%;
+}
+a:hover {color:red;}   /* 鼠标指针移动到链接上 *
+
+
 
 	

@@ -12,11 +12,8 @@ $db=mysqli_connect('localhost','root','wzj196310') or die ('Unable to connect.Ch
 mysqli_select_db($db,'bbs');
 $sql = "INSERT INTO user(username,password)
 VALUES ('".$_POST['username']."','".$_POST['password']."')";
-if (mysqli_query($db, $sql)) {
-    echo "New record created successfully";
-	echo '<a href="login.php">去登录吧，超人</a>';
-} 
-elseif(empty($_POST["username"])&&empty($_POST["password"])){
+
+if(empty($_POST["username"])&&empty($_POST["password"])){
 		echo "Error:请输入用户名和密码";
 }
 elseif(empty($_POST["username"])){
@@ -25,6 +22,10 @@ elseif(empty($_POST["username"])){
 elseif(empty($_POST["password"])) {
 		echo "Error:请设置密码";
 }
+elseif (mysqli_query($db, $sql)) {
+    echo "New record created successfully";
+	echo '<a href="login.php">去登录吧，超人</a>';
+} 
 else {
     echo 'Error:用户已存在请直接<a href="login.php">登录</a>';
 }

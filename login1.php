@@ -30,9 +30,7 @@ elseif(empty($_POST["password"])) {
 elseif($row['password']==$_POST['password'])
 {
 	$_SESSION['username']=$_POST['username'] ;
-echo '<h1>Hello ' . $_POST['username'] . '!</h1>';
-echo '<a href="DreamWorld.php">开启网站之旅吧，欧耶！</a>';
-echo "<br>";
+	header("Location:DreamWorld.php");
 }
 
 else
