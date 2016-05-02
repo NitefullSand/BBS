@@ -14,20 +14,25 @@ $sql = "INSERT INTO user(username,password)
 VALUES ('".$_POST['username']."','".$_POST['password']."')";
 
 if(empty($_POST["username"])&&empty($_POST["password"])){
-		echo "Error:请输入用户名和密码";
+	echo "<script>alert('Error:请输入用户名和密码');  top.location='signup.php'; </script>";
+		//echo "Error:请输入用户名和密码";
 }
 elseif(empty($_POST["username"])){
+	echo "<script>alert('Error:请输入用户名');  top.location='signup.php'; </script>";
 		echo "Error:请输入用户名";
 }
 elseif(empty($_POST["password"])) {
-		echo "Error:请设置密码";
+	echo "<script>alert('Error:请设置密码');  top.location='signup.php'; </script>";
+		//echo "Error:请设置密码";
 }
 elseif (mysqli_query($db, $sql)) {
-    echo "New record created successfully";
-	echo '<a href="login.php">去登录吧，超人</a>';
+	header("Location:login.php");
+    //echo "New record created successfully";
+	//echo '<a href="login.php">去登录吧，超人</a>';
 } 
 else {
-    echo 'Error:用户已存在请直接<a href="login.php">登录</a>';
+	echo "<script>alert('用户已存在请直接登录');  top.location='login.php'; </script>";
+    //echo 'Error:用户已存在请直接<a href="login.php">登录</a>';
 }
 //define variables and set to empty values
 //$nameErr=$passwordErr="";

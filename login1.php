@@ -17,14 +17,17 @@ $sql="select password FROM user WHERE username='". $_POST['username']."'";
 $result=mysqli_query($db,$sql);
 $row = $result->fetch_assoc();
 if(empty($_POST["username"])&&empty($_POST["password"])){
-		echo "Error:请输入用户名和密码";
+	echo "<script>alert('Error:请输入用户名和密码');  top.location='login.php'; </script>";
+	//	echo "Error:请输入用户名和密码";
 }
 elseif(empty($_POST["username"])){
-		echo "Error:请输入用户名";
+	echo "<script>alert('Error:请输入用户名');  top.location='login.php'; </script>";
+		//echo "Error:请输入用户名";
 		
 }
 elseif(empty($_POST["password"])) {
-		echo "Error:请输入密码";
+	echo "<script>alert('Error:请输入密码');  top.location='login.php'; </script>";
+		//echo "Error:请输入密码";
 }
 
 elseif($row['password']==$_POST['password'])
@@ -34,8 +37,8 @@ elseif($row['password']==$_POST['password'])
 }
 
 else
-{
-	echo "密码或用户名错误";
+{	echo "<script>alert('Error:密码或用户名错误');  top.location='login.php'; </script>";
+	//echo "密码或用户名错误";
 }
 
 ?>
