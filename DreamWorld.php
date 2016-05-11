@@ -12,8 +12,8 @@
 	<div class="myself">
 		<a href="myself.php">我的简历</a>
 	</div>
-	<div class="myphoto">
-		<a href="myPhoto.php">我的照片</a>
+	<div class="talk">
+		<a href="talk.php">碎言碎语</a>
 	</div>
 	<div class="friendship">
 		<a href="#">友情链接</a>
@@ -30,7 +30,12 @@
 </div>
 
 <div class="content1">
-Welcome to NitefullSand！
+<CENTER><FONT face=隶书 color=red size=15>
+<MARQUEE direction=up behavior=alternate width=60 height=120>欢</MARQUEE><FONT color=yellow>
+<MARQUEE direction=up behavior=alternate width=60 height=80>迎</MARQUEE><FONT color=brown>
+<MARQUEE direction=up behavior=alternate width=60 height=120>来</MARQUEE><FONT color=green>
+<MARQUEE direction=up behavior=alternate width=60 height=80>到</MARQUEE><FONT color=orange>
+<MARQUEE direction=up behavior=alternate width=290 height=120>NitefuiiSand</MARQUEE><FONT color=yellow>
 </div>
 <div class="footer">
 </div>

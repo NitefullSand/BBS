@@ -13,7 +13,7 @@ session_start();
 <?php
 $db=mysqli_connect('localhost','root','wzj196310') or die ('Unable to connect.Check your connection parameters.');
 mysqli_select_db($db,'bbs');
-$sql="select password FROM user WHERE username='". $_POST['username']."'";
+$sql="select password FROM user WHERE binary username='". $_POST['username']."'";
 $result=mysqli_query($db,$sql);
 $row = $result->fetch_assoc();
 if(empty($_POST["username"])&&empty($_POST["password"])){

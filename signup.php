@@ -20,6 +20,16 @@
             <td><input type="password" name="password" />
             </td>
         </tr>
+        <tr class="Sverify">
+            <td>验证码</td>
+            <td><input type="text" placeholder="验证码" name="verify"/>
+            </td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td><img src="verify.php" width="100" height="50"/>
+            </td>
+        </tr>
         <tr>
             <td colspan="2" style="text-align:center;">
             <input type="submit" name="submit" value="注册" />

@@ -49,7 +49,7 @@ echo <<<ENDHTML
 	</div>
 </div>
 ENDHTML;
-	// echo '<a href="answer.php?id='.$row['answer_id'].'">回复';
+echo '<a href="answer.php?id='.$_GET['id'].'">回复</a></div>';
 }
 echo "<a href='topic3.php'>返回继续查看</a><br>";
 echo "<a href='DreamWorld.php'>返回首页</a>";

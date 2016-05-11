@@ -8,6 +8,7 @@
 
 <body>
 <?php
+session_start();
 $db=mysqli_connect('localhost','root','wzj196310') or die ('Unable to connect.Check your connection parameters.');
 mysqli_select_db($db,'bbs');
 $sql = "INSERT INTO user(username,password)
@@ -25,6 +26,15 @@ elseif(empty($_POST["password"])) {
 	echo "<script>alert('Error:请设置密码');  top.location='signup.php'; </script>";
 		//echo "Error:请设置密码";
 }
+elseif(empty($_POST['verify'])){
+	echo "<script>alert('Error:验证码不能为空');
+	 top.location='signup.php'; </script>";
+}
+elseif ($_POST['verify']!=$_SESSION['verify']) {
+	echo "<script>alert('Error:验证码输入错误');
+	 top.location='signup.php'; </script>";
+}
+	
 elseif (mysqli_query($db, $sql)) {
 	header("Location:login.php");
     //echo "New record created successfully";
@@ -34,6 +44,7 @@ else {
 	echo "<script>alert('用户已存在请直接登录');  top.location='login.php'; </script>";
     //echo 'Error:用户已存在请直接<a href="login.php">登录</a>';
 }
+
 //define variables and set to empty values
 //$nameErr=$passwordErr="";
 //$name=$password="";
