@@ -2,7 +2,7 @@
 	color: blue;
 }
 .new{
-	color:#8fbc8f;
+	font-size: 30px;
 }
 .Sform{
 	position: absolute;
@@ -22,14 +22,7 @@
 	left: 40%;
 	top: 48%;
 }
-*{
-	background-color: 
-}
-.header{
-	color:green;
 
-
-}
 .menu{
 	position: absolute;
 	left: 7%;
@@ -40,11 +33,6 @@
 	left:30%;
 	top: 30%;
 
-}
-body{
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	
 }
 .Aform{
 	position: absolute;

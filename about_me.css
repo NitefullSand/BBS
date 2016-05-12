@@ -1,0 +1,41 @@
+body{
+	background-image: url(aboutbg.jpg);
+}
+.name{
+	margin-left: 10%;
+	color:green;
+	font-size:40px;
+	margin-top:-3.5%;
+}
+.name h1{
+	color: pink;
+	position: absolute;
+	left:30%;
+	top: -2%;
+}
+.btn_{
+	margin-left:10%;
+	margin-top: 3%;
+}
+h4{
+	position: relative;
+	left: 10%;
+	top:4%;
+}
+#nav{
+	position:relative;
+	left: 38%;
+	width:100%; 
+	line-height: 50px; 
+	height: 50px; 
+	font-family: "微软雅黑"; 
+	font-size: 16px; 
+}
+#nav ul li { 
+	display: inline; 
+	margin: 0 12px;
+	text-align:center;
+}
+#nav ul li a { 
+	color: #000; 
+}

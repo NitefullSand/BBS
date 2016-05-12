@@ -33,7 +33,7 @@ elseif(empty($_POST["password"])) {
 elseif($row['password']==$_POST['password'])
 {
 	$_SESSION['username']=$_POST['username'] ;
-	header("Location:DreamWorld.php");
+	header("Location:Love.php");
 }
 
 else

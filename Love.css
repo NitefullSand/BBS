@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 12px;
+	background: #226039 url(images/bg.jpg) 
+	center 0 scroll no-repeat;
+	color: #5d5d5d;
+}
+header{
+	width:100%;
+	margin:auto;
+	border-bottom: #3c7a48 1px solid;
+}
+.quotes{
+	width: 1000px; 
+	position: relative; 
+	margin: 60px auto 120px auto;
+}
+.quotes p{
+	text-shadow: #246640 1px 1px 1px; 
+	color: #fff; 
+	width: 330px; 
+	line-height: 26px;
+}
+.text5 { 
+	position: absolute;
+	left: 0px; 
+	top: 160px; 
+	font-family: "微软雅黑"; 
+	font-size: 30px; 
+	color: #FFF; 
+	-webkit-box-reflect: below -3px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(white)); 
+}
+#nav { 
+	width:100%; 
+	line-height: 50px; 
+	height: 50px; 
+	font-family: "微软雅黑"; 
+	font-size: 16px; 
+	background: rgba(56,134,72,.8); 
+	text-align: center; 
+	position: relative; 
+	border-bottom: #559765 1px solid;
+}
+#nav ul { 
+	width:1000px; 
+	margin: auto; 
+	/*background: url(../images/heart.png) */
+	/*left no-repeat; 
+	overflow: hidden;*/
+}
+#nav ul li { 
+	display: inline; 
+	margin: 0 12px;
+	text-align:center;
+}
+#nav ul li a { 
+	color: #fff; 
+}
+.photowall { 
+	width: 100%; 
+	background: #559664; 
+	padding: 30px 0; 
+	overflow: hidden;
+	border-bottom: #226039 1px solid;
+}
+.photowall img { 
+	display: block; 
+	opacity: 0.9; 
+	-webkit-transition: opacity 0.35s; 
+	transition: opacity 0.35s; 
+}
+.wall_a { 
+width: 1000px; 
+margin: auto; 
+background: #fafcfa; 
+overflow: hidden 
+}
+.wall_a li { 
+	float: left;
+    position: relative; 
+}
+.wall_a li p a { 
+	color: #686868;
+}
+.text_a { 
+	width: 220px; 
+	line-height: 24px; 
+	padding: 30px 20px; 
+}
+.text_b { 
+	width: 164px; 
+	line-height: 24px; 
+	padding: 40px 20px;
+}
+.wall_a li figcaption { 
+	position: absolute; 
+	left: 0; 
+	top: 10px; 
+}
+.wall_a li h2 { 
+	font-size: 12px; 
+	line-height: 24px; 
+	padding: 20px; 
+	font-weight: normal; 
+	opacity: 0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; 
+	transition: opacity 0.35s, transform 0.35s; 
+	-webkit-transform: scale(0); 
+	transform: scale(0); 
+	color: #666; 
+}
+.wall_a li:hover h2 { 
+	opacity: 1; 
+	-webkit-transform: scale(1); 
+	transform: scale(1); 
+}
+.wall_a li:hover img { 
+	opacity: 0.4; 
+}
