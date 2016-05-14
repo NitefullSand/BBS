@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>漫生活</title>
+	<title>女程序应该如何发展详情</title>
 	<link rel="stylesheet" href="about_me.css"/>
 	<link rel="stylesheet" href="MSH.css">
 	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -15,10 +15,5 @@ include 'top_class.php';
 <div class="btn_">
 <button class="btn btn-info" onclick="location='Love.php'">网站首页</button>
 <button type="button" class="btn btn-success">漫生活</button>
-<hr>
-<div class="coding_girl">
-<a href="MSH1.php">女程序员应该如何发展?</a>
-<p>发布时间：</p>
-</div>
 </body>
 </html>

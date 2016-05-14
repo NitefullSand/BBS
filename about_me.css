@@ -17,10 +17,15 @@ body{
 	margin-left:10%;
 	margin-top: 3%;
 }
-h4{
-	position: relative;
+.my_font{
+	position:relative;
 	left: 10%;
 	top:4%;
+	text-align:left;
+	width:50%;
+	font-family: "微软雅黑";
+	color: #fff; 
+	line-height: 28px;
 }
 #nav{
 	position:relative;
@@ -39,3 +44,13 @@ h4{
 #nav ul li a { 
 	color: #000; 
 }
+.my_ability{
+	position:absolute;
+	left:65%;
+	top:28%;
+}
+.my_ability h5{
+	font-family: "微软雅黑";
+	color: pink;
+}
+
