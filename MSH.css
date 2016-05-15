@@ -10,18 +10,6 @@ text-decoration: none;
 a:active {
 text-decoration: none;
 }
-.coding_girl{
-	position:absolute;
-	top:27%;
-	text-align:left;
-	width:50%;
-	font-family: "微软雅黑";
-	line-height: 28px;
-}
-.coding_girl a{
-	color:#000;
-	text-decoration:none;
-}
 hr{
 	width:62%;
 	/*border:1 dashed #5151A2;*/

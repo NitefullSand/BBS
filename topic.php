@@ -38,7 +38,7 @@ if(isset($_SESSION['username']))
 <button class="btn btn-info" onclick="location='Love.php'">网站首页</button>
 <button type="button" class="btn btn-success">留言板</button>
 <div class="Tform">
-<form action="topic1.php" method="post">
+<form action="insert_data_topic.php" method="post">
 		<table>
 			<tr>
 	            <td><?php echo $_SESSION['username'];?></td>

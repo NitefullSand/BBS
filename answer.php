@@ -8,9 +8,9 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="topic4.css"/>
 </head>
 <body>
-<img src="bg2.jpg" width="100%" height="100%"/>
+<img src="bbs_images/bg2.jpg" width="100%" height="100%"/>
 <div class="Aform">
-<form action="answer1.php" method="post">
+<form action="insert_answer.php" method="post">
 		<?php
 			echo '<input type="hidden" name="topic_id" value='.$_GET['id'].'/>';
 		?>

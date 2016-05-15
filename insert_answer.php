@@ -17,7 +17,7 @@ $sql = "INSERT INTO answer(topic_id,answer_content,author,time)
 VALUES('".$_POST['topic_id']."','".$_POST['answer_content']."','". $_SESSION['username']."','".date("y-m-d h:i:s",time())."')";
 if(mysqli_query($db, $sql)) {
     echo "回复成功";
-	echo "<a href='topic4.php?id=".$_POST['topic_id']."'>返回查看</a><br/>";
+	echo "<a href='detailed_topic.php?id=".$_POST['topic_id']."'>返回查看</a><br/>";
 } 
 else{
 	echo $_POST['topic_id'];

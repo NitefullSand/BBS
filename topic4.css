@@ -1,8 +1,9 @@
-.center{
-	color: blue;
+.cheading a{
+	color:green;
 }
-.new{
+.point_me a{
 	font-size: 30px;
+	color:pink;
 }
 .Sform{
 	position: absolute;
@@ -44,8 +45,16 @@
 	left: 7%;
 	top: 40%;
 }
-a:hover {color:red;}   /* 鼠标指针移动到链接上 *
-
+a:hover {color:red;}   /* 鼠标指针移动到链接上 */
+.all_news{
+	width:50%;
+	height:100%;
+	position:relative;
+	left:10%;
+	top:5%;
+	font-family:"微软雅黑";
+	border:1px dashed #fff;
+}
 
 
 	

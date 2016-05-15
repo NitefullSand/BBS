@@ -14,8 +14,6 @@ include 'top_class.php';
 <div class="btn_">
 <button class="btn btn-info" onclick="location='Love.php'">网站首页</button>
 <button type="button" class="btn btn-success">关于我</button>
-
-
 </div>
 <div class="my_font">
 <p>Just about me</p>
@@ -39,7 +37,7 @@ include 'top_class.php';
 <h5>喜欢的书:《三国演义》</h5>
 <h5>座右铭:态度决定一切</h5>
 
-<img src="卡通.jpg" width="300px" height="500px">
+<img src="bbs_images/卡通.jpg" width="300px" height="500px">
 </div>
 </body>
 </html>

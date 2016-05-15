@@ -16,9 +16,6 @@ include 'top_class.php';
 <button class="btn btn-info" onclick="location='Love.php'">网站首页</button>
 <button type="button" class="btn btn-success">漫生活</button>
 <hr>
-<div class="coding_girl">
-<a href="MSH1.php">女程序员应该如何发展?</a>
-<p>发布时间：</p>
 </div>
 </body>
 </html>

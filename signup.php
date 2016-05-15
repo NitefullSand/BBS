@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="topic4.css"/>
 </head>
 <body>
-<img src="bg2.jpg" width="100%" height="100%"/>
+<img src="bbs_images/bg2.jpg" width="100%" height="100%"/>
 <div class="Sform">
 <form action="signup1.php" method="post">
 	<table>
