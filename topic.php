@@ -49,7 +49,22 @@ if(isset($_SESSION['username']))
 			</tr>
 			<tr>
 				<td>内容:</td>
-				<td><textarea name="content" rows="5" cols="40"></textarea></td>
+				<td>
+				<!-- <textarea name="content" rows="5" cols="40"></textarea> -->
+				<div id="content">
+				<!--加载编辑器的容器-->
+					<script id="container" name="content" type="text/plain">
+					</script>
+					<!--配置文件-->
+					<script type="text/javascript" src="utf8-php/ueditor.config.js"></script>
+					<!--编辑器源码文件-->
+					<script type="text/javascript" src="utf8-php/ueditor.all.js"></script>
+					<!-- 实例化编辑器 -->
+				    <script type="text/javascript">
+				        var ue = UE.getEditor('container');
+				    </script>
+				</div>
+				</td>
 			</tr>
 			<tr>
 				<td>时间:</td>

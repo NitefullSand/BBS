@@ -1,10 +1,13 @@
 .cheading a{
-	color:green;
+	color:#fff;
 }
-.point_me a{
-	font-size: 30px;
-	color:pink;
+.cheading a:hover {color:pink;}
+.point_me button{
+	position:absolute;
+	left: 21.7%;
+	top: 16%;
 }
+.point_me a:hover {color:green;}
 .Sform{
 	position: absolute;
 	left: 40%;
@@ -20,8 +23,8 @@
 }
 .Tform{
 	position: absolute;
-	left: 40%;
-	top: 48%;
+	left: 8%;
+	top: 30%;
 }
 
 .menu{
@@ -37,24 +40,39 @@
 }
 .Aform{
 	position: absolute;
-	left: 40%;
-	top: 48%;
+	left: 8%;
+	top: 30%;
 }
 .exit{
 	position: absolute;
 	left: 7%;
 	top: 40%;
 }
-a:hover {color:red;}   /* 鼠标指针移动到链接上 */
 .all_news{
 	width:50%;
-	height:100%;
 	position:relative;
 	left:10%;
 	top:5%;
 	font-family:"微软雅黑";
 	border:1px dashed #fff;
 }
-
-
-	
+#content{
+	width: 55%;
+}
+.center{
+	width:50%;
+	position:relative;
+	left:10%;
+	top:5%;
+	font-family:"微软雅黑";
+	border:1px dashed #fff;
+}
+.center a{
+	color: green;
+}
+.center a:hover {color:red;}   /* 鼠标指针移动到链接上 */
+.pages{
+	position: relative;
+	left: 10%;
+	top: 3%;	
+}

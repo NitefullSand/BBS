@@ -22,9 +22,9 @@ if (!isset($_SESSION['username']))
 <button class="btn btn-info" onclick="location='Love.php'">网站首页</button>
 <button type="button" class="btn btn-success">留言板</button>
 </div>
-<div class="all_news">
+<!-- <div class="all_news"> -->
 <div class="point_me">
-<a href="topic.php">点我留言</a>
+<a href="topic.php"><button class="btn btn-info">点我留言</button></a>
 </div>
 <?php
 $db=mysqli_connect('localhost','root','wzj196310') or die ('Unable to connect.Check your connection parameters.');
@@ -61,21 +61,26 @@ $result=mysqli_query($db,$sql);
 while($row = $result->fetch_assoc()){
 	$heading=$row['heading'];
 	$topic_id=$row['topic_id'];
-echo $row['author']."<br>";
+	$author=$row['author'];
+	$content=$row['content'];
+	$time=$row['time'];
 echo <<<ENDHTML
+<div class="all_news">
+	$author;
 	<div class="cheading">
 		<a href="detailed_topic.php?id=$topic_id">$heading</a>
 	</div>
+	$content;
+	$time;
+</div>
 ENDHTML;
-echo $row['content']."<br>";
-echo $row['time']."<br>";
-echo "<hr/>";
 }
 ?>
+</div>
 <?php
 //显示分页
 echo '
-<div>
+<div class="pages">
 <ul class="pagination">
 	<li><a href="look_topic.php?index='.($page_index-1).'">&laquo;</a></li>';
 		for($i=1;$i<=$pages_count;$i++)
@@ -91,6 +96,5 @@ echo '
 	echo '<li><a href="look_topic.php?index='.($page_index+1).'">&raquo;</a></li>
 	</ul></div>';
 ?>
-</div>
 </body>
 </html>
