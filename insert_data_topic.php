@@ -12,10 +12,6 @@ session_start();
 ?>
 </head>
 <body>
-<div class="btn_">
-<button class="btn btn-info" onclick="location='Love.php'">网站首页</button>
-<button type="button" class="btn btn-success">留言板</button>
-</div>
 <?php 
 if(empty($_POST['heading'])||empty($_POST['content']))
 {

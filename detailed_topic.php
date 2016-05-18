@@ -23,7 +23,7 @@ ENDHTML;
 //echo "欢迎" . $_SESSION['username']."<br>";
 $db=mysqli_connect('localhost','root','wzj196310') or die ('Unable to connect.Check your connection parameters.');
 mysqli_select_db($db,'bbs');
-$sql="select * FROM topic where topic_id='".$_GET['id']."'";
+$sql="select * FROM topic where topic_id='".$tid."'";
 $result=mysqli_query($db,$sql);
 while($row = $result->fetch_assoc()){
 $author=$row['author'];
@@ -50,9 +50,8 @@ $sql="select count(*) from answer";
 $result=mysqli_query($db,$sql);
 $answer_rows=$result->fetch_assoc()['count(*)'];
 //计算分页数目
-$pages_count=floor($answer_rows/5);
-if($answer_rows==0||$answer_rows%5!=0)
-{
+$pages_count=floor($answer_rows/7);
+if($answer_rows==0||$answer_rows%7!=0){
 	$pages_count=$pages_count+1;
 }
 //分页索引
@@ -71,9 +70,9 @@ else if ($page_index>$pages_count) {
 	$page_index=$pages_count;
 }
 //回复索引
-$answer_index=($page_index-1)*5;
+$answer_index=($page_index-1)*7;
 //分页查询回复
-$sql="select * FROM answer where topic_id=".$_GET['id']." limit ".$answer_index.",5";
+$sql="select * FROM answer where topic_id=".$tid." limit ".$answer_index.",7";
 $result=mysqli_query($db, $sql);
 while($row = $result->fetch_assoc()){
 $author=$row['author'];
@@ -99,7 +98,7 @@ ENDHTML;
 echo '
 <div class="pages">
 <ul class="pagination">
-	<li><a href="look_topic.php?index='.($page_index-1).'">&laquo;</a></li>';
+	<li><a href="detailed_topic.php?id='.$tid.'&index='.($page_index-1).'">&laquo;</a></li>';
 		for($i=1;$i<=$pages_count;$i++)
 		{
 			if($i==$page_index)
@@ -107,12 +106,21 @@ echo '
 				echo '<li><a style="color:#FF0000">'.$i.'</a></li>';
 			}
 			else{
-				echo '<li><a href="look_topic.php?index='.$i.'">'.$i.'</a></li>';
+				echo '<li><a href="detailed_topic.php?id='.$tid.'&index='.$i.'">'.$i.'</a></li>';
 			}
 		}
-	echo '<li><a href="look_topic.php?index='.($page_index+1).'">&raquo;</a></li>
+	echo '<li><a href="detailed_topic.php?id='.$tid.'&index='.($page_index+1).'">&raquo;</a></li>
 	</ul></div>';
 ?>
+<div class="my_ability">
+<h5>网名：NitefullSand</h5>
+<h5>姓名:刘艳</h5>
+<h5>籍贯:吉林 长春</h5>
+<h5>现居:安徽 合肥工业大学</h5>
+<h5>喜欢的书:《三国演义》</h5>
+<h5>座右铭:态度决定一切</h5>
 
+<img src="bbs_images/卡通.jpg" width="300px" height="500px">
+</div>
 </body>
 </html>

@@ -15,6 +15,9 @@ include 'top_class.php';
 <button class="btn btn-info" onclick="location='Love.php'">网站首页</button>
 <button type="button" class="btn btn-success">关于我</button>
 </div>
+<span class="hh">
+n像“草根”一样，紧贴着地面，低调的存在，冬去春来，枯荣无恙。
+</span>
 <div class="my_font">
 <p>Just about me</p>
 <p>我叫刘艳，于2013年考上了合肥工业大学软件学院软件工程专业。目前为止，专业课我没有兴趣，后台程序我不喜欢。不过嘿嘿一下，我还是有事情做的。比如鼓励男朋友打代码，督促他做作业了。他可是一个小懒孩儿。不催他他是不会提前做滴。哦呵呵呵。嘘，小心被他看见咯。</p>

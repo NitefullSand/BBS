@@ -9,9 +9,9 @@ body{
 }
 .name h1{
 	color: pink;
-	position: absolute;
+	position:absolute;
 	left:30%;
-	top: -2%;
+	top: -1.5%;
 }
 .btn_{
 	margin-left:10%;
@@ -44,6 +44,7 @@ body{
 #nav ul li a { 
 	color: #000; 
 }
+#nav ul li a:hover {text-decoration: none;} 
 .my_ability{
 	position:absolute;
 	left:65%;
@@ -53,4 +54,11 @@ body{
 	font-family: "微软雅黑";
 	color: pink;
 }
+.hh{
+	color:#2F4f4f;
+	position:absolute;
+	left:53%;
+	top:17%;
+}
+
 

@@ -1,13 +1,7 @@
 .cheading a{
 	color:#fff;
 }
-.cheading a:hover {color:pink;}
-.point_me button{
-	position:absolute;
-	left: 21.7%;
-	top: 16%;
-}
-.point_me a:hover {color:green;}
+.cheading a:hover {color:pink;text-decoration: none;}
 .Sform{
 	position: absolute;
 	left: 40%;
@@ -70,9 +64,15 @@
 .center a{
 	color: green;
 }
-.center a:hover {color:red;}   /* 鼠标指针移动到链接上 */
+.center a:hover {color:red;text-decoration: none;}   /* 鼠标指针移动到链接上 */
 .pages{
 	position: relative;
 	left: 10%;
 	top: 3%;	
+}
+.hh{
+	color:#2F4f4f;
+	position:absolute;
+	left:53%;
+	top:17%;
 }

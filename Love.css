@@ -57,8 +57,10 @@ header{
 	text-align:center;
 }
 #nav ul li a { 
-	color: #fff; 
+	color: #fff;
+
 }
+#nav ul li a:hover {text-decoration: none;}
 .photowall { 
 	width: 100%; 
 	background: #559664; 
