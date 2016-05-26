@@ -1,40 +1,52 @@
-<?php
-session_start();
-if(isset($_SESSION['username']))
-    session_destroy();
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>登录</title>
-<link rel="stylesheet" type="text/css" href="topic4.css"/>
-</head>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
-<body>
-<img src="bbs_images/bg2.jpg" width="100%" height="100%"/>
-<div class="Lform">
-<form action="login1.php" method="post">
-	<table>
-        <tr>
-            <td class="Lname"><img src="bbs_images/people.png">Name</td>
-            <td><input type="text" name="username" />
-            </td>
-       </tr>
-        <tr>
-            <td class="Lpassword"><img src="bbs_images/lock.png">Password</td>
-            <td><input type="password" name="password" />
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align:center;">
-            <input type="submit" name="submit" value="登录" />
-            </td>
-        </tr>
-    </table>
+    <head>
 
-</form>
-<a href="signup.php" style="margin-left:200px">去注册吧，皮卡丘</a>
-</div>
-</body>
+        <meta charset="utf-8">
+        <title>Fullscreen Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/supersized.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.8.2.min.js"></script>
+        <script src="assets/js/supersized.3.2.7.min.js"></script>
+        <script src="assets/js/supersized-init.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="page-container">
+            <h1>Login</h1>
+           <form action="login1.php" method="post">
+                <input type="text" name="username" class="username" placeholder="Username">
+                <input type="password" name="password" class="password" placeholder="Password">
+                <button type="submit">Sign me in</button>
+                <div class="error"><span>+</span></div>
+            </form>
+            <p id="clickme">
+            <a href="signup.php">create a new account</a>
+            </p>
+            <!-- <div class="connect">
+                <p>Or connect with:</p>
+                <p>
+                    <a class="facebook" href=""></a>
+                    <a class="twitter" href=""></a>
+                </p>
+            </div> -->
+        </div>
+    </body>
+
 </html>
+

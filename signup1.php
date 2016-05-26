@@ -26,14 +26,14 @@ elseif(empty($_POST["password"])) {
 	echo "<script>alert('Error:请设置密码');  top.location='signup.php'; </script>";
 		//echo "Error:请设置密码";
 }
-elseif(empty($_POST['verify'])){
-	echo "<script>alert('Error:验证码不能为空');
-	 top.location='signup.php'; </script>";
-}
-elseif ($_POST['verify']!=$_SESSION['verify']) {
-	echo "<script>alert('Error:验证码输入错误');
-	 top.location='signup.php'; </script>";
-}
+ elseif(empty($_POST['verify'])){
+ 	echo "<script>alert('Error:验证码不能为空');
+ 	 top.location='signup.php'; </script>";
+ }
+ elseif ($_POST['verify']!=$_SESSION['verify']) {
+ 	echo "<script>alert('Error:验证码输入错误');
+ 	 top.location='signup.php'; </script>";
+ }
 	
 elseif (mysqli_query($db, $sql)) {
 	header("Location:login.php");
